@@ -50,24 +50,26 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
-    <Compile Include="p011-p020.fs" />
-    <Compile Include="p021-p030.fs" />
-    <Compile Include="p031-p040.fs" />
-    <Compile Include="p041-p050.fs" />
-    <Compile Include="p051-p060.fs" />
-    <Compile Include="p061-p070.fs" />
-    <Compile Include="p071-p080.fs" />
     <Compile Include="Common\Common.fs" />
-    <Compile Include="Problems\1-10\Problem 001.fs" />
-    <Compile Include="Problems\1-10\Problem 002.fs" />
-    <Compile Include="Problems\1-10\Problem 003.fs" />
-    <Compile Include="Problems\1-10\Problem 004.fs" />
-    <Compile Include="Problems\1-10\Problem 005.fs" />
-    <Compile Include="Problems\1-10\Problem 006.fs" />
-    <Compile Include="Problems\1-10\Problem 007.fs" />
-    <Compile Include="Problems\1-10\Problem 008.fs" />
-    <Compile Include="Problems\1-10\Problem 009.fs" />
-    <Compile Include="Problems\1-10\Problem 010.fs" />
+    <Compile Include="NeedsStructuring\p021-p030.fs" />
+    <Compile Include="NeedsStructuring\p031-p040.fs" />
+    <Compile Include="NeedsStructuring\p041-p050.fs" />
+    <Compile Include="NeedsStructuring\p051-p060.fs" />
+    <Compile Include="NeedsStructuring\p061-p070.fs" />
+    <Compile Include="NeedsStructuring\p071-p080.fs" />
+    <Compile Include="Problems\001-010\Problem 001.fs" />
+    <Compile Include="Problems\001-010\Problem 002.fs" />
+    <Compile Include="Problems\001-010\Problem 003.fs" />
+    <Compile Include="Problems\001-010\Problem 004.fs" />
+    <Compile Include="Problems\001-010\Problem 005.fs" />
+    <Compile Include="Problems\001-010\Problem 006.fs" />
+    <Compile Include="Problems\001-010\Problem 007.fs" />
+    <Compile Include="Problems\001-010\Problem 008.fs" />
+    <Compile Include="Problems\001-010\Problem 009.fs" />
+    <Compile Include="Problems\001-010\Problem 010.fs" />
+    <Compile Include="Problems\011-020\Problem 014.fs" />
+    <Compile Include="Problems\011-020\Problem 016.fs" />
+    <Compile Include="Problems\011-020\Problem 020.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
