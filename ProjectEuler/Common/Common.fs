@@ -19,3 +19,7 @@ let isPrime number =
     elif number % 2 = 0 then false
     else
         {3..2..Int.sqrt number} |> Seq.tryFind (fun e -> number % e = 0) |> fun e -> e.IsNone
+
+let primeSequence =
+    Seq.initInfinite ((+) 2)
+    |> Seq.where isPrime
