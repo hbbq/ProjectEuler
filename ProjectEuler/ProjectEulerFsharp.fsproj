@@ -50,7 +50,6 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
-    <Compile Include="p001-p010.fs" />
     <Compile Include="p011-p020.fs" />
     <Compile Include="p021-p030.fs" />
     <Compile Include="p031-p040.fs" />
@@ -67,6 +66,8 @@
     <Compile Include="Problems\1-10\Problem 006.fs" />
     <Compile Include="Problems\1-10\Problem 007.fs" />
     <Compile Include="Problems\1-10\Problem 008.fs" />
+    <Compile Include="Problems\1-10\Problem 009.fs" />
+    <Compile Include="Problems\1-10\Problem 010.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
