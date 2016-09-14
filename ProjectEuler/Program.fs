@@ -10,7 +10,7 @@ let main argv =
     let stopwatch = Diagnostics.Stopwatch.StartNew()
 
     //Get result from Problem X
-    let result = Problem_020.problem.ToString()
+    let result = Problem_021.problem.ToString()
 
     stopwatch.Stop()
 

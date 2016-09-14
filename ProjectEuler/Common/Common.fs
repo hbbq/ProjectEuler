@@ -31,3 +31,5 @@ let primeSequence =
     s 2L
     |> Seq.where isPrime
         
+let getDivisors n = 
+    {1..n/2} |> Seq.filter (fun e -> n % e = 0)
