@@ -51,7 +51,6 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Compile Include="Common\Common.fs" />
-    <Compile Include="NeedsStructuring\p021-p030.fs" />
     <Compile Include="NeedsStructuring\p031-p040.fs" />
     <Compile Include="NeedsStructuring\p041-p050.fs" />
     <Compile Include="NeedsStructuring\p051-p060.fs" />
@@ -71,6 +70,8 @@
     <Compile Include="Problems\011-020\Problem 016.fs" />
     <Compile Include="Problems\011-020\Problem 020.fs" />
     <Compile Include="Problems\021-030\Problem 021.fs" />
+    <Compile Include="Problems\021-030\Problem 024.fs" />
+    <Compile Include="Problems\021-030\Problem 029.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
