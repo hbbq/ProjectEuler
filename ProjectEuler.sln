@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectEulerFsharp", "ConsoleApplication2\ProjectEulerFsharp.fsproj", "{3EF168D6-3142-4F5B-B4F1-87C9C071CB64}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectEulerFsharp", "ProjectEuler\ProjectEulerFsharp.fsproj", "{3EF168D6-3142-4F5B-B4F1-87C9C071CB64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

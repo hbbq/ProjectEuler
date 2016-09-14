@@ -8,7 +8,7 @@
     <ProjectGuid>3ef168d6-3142-4f5b-b4f1-87c9c071cb64</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApplication2</RootNamespace>
-    <AssemblyName>ConsoleApplication2</AssemblyName>
+    <AssemblyName>ProjectEuler</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
@@ -49,7 +49,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Program.fs" />
     <None Include="App.config" />
     <Compile Include="p001-p010.fs" />
     <Compile Include="p011-p020.fs" />
@@ -59,6 +58,10 @@
     <Compile Include="p051-p060.fs" />
     <Compile Include="p061-p070.fs" />
     <Compile Include="p071-p080.fs" />
+    <Compile Include="Common\Common.fs" />
+    <Compile Include="Problems\1-10\Problem 001.fs" />
+    <Compile Include="Problems\1-10\Problem 002.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
