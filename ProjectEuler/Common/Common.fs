@@ -3,6 +3,9 @@
 module Int =
     let sqrt = float >> sqrt >> int
 
+module String =    
+    let Reverse (s:string) = new string(Array.rev (s.ToCharArray()))
+
 let fibonacciSeries =
     let rec fib this previous = seq {
         yield this

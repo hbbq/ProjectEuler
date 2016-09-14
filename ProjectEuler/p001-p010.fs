@@ -3,28 +3,6 @@
 open System
 open System.Globalization
 
-let p001 =
-    [0..999] |> List.filter (fun x -> x % 3 = 0 || x % 5 = 0) |> List.sum
-
-let p002 =
-    let rec fibSeq p0 p1 = seq {
-        yield p0
-        yield! fibSeq p1 (p0 + p1)
-    }
-    let series = fibSeq 0 1 |> Seq.takeWhile (fun e -> e < 4000000) |> Seq.filter (fun e -> e % 2 = 0) |> Seq.toList
-    List.sum series
-
-let p003 =
-    let x = 600851475143.0
-    let isPrime n = {2.0..n/2.0} |> Seq.tryFind (fun e -> n % e = 0.0) |> (fun e -> e.IsNone)
-    {2.0..x} |> Seq.tryFind (fun e -> x % e = 0.0 && isPrime (x/e)) |> (fun e -> x / e.Value)
-
-let p004 =
-    let x n = [100..999] |> List.map (fun e -> e * n)
-    let ReverseString (s:string) = new string(Array.rev (s.ToCharArray()))
-    [100..999] |> List.collect (fun e -> x e) |> List.sortByDescending (fun e -> e) |> List.map (fun e -> e.ToString()) |> List.map (fun e -> (e, ReverseString e))
-    |> List.tryFind (fun (a,b) -> a=b)
-
 let p005 =
     let isPrime n = {2.0..n/2.0} |> Seq.tryFind (fun e -> n % e = 0.0) |> (fun e -> e.IsNone)
     let a = [2.0..20.0] |> List.filter isPrime |> List.fold (fun acc e -> acc * e) 1.0
