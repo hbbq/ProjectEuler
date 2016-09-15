@@ -28,12 +28,15 @@ let isPrime number =
                 
 let primeSequence =
     let rec s n = seq {
-        yield n
-        yield! s (n+1L)
+        if n = 1L then yield 2L else yield n
+        yield! s (n+2L)
     }
-    s 2L
+    s 1L
     |> Seq.where isPrime
-        
+
+let infinite start =
+    Seq.initInfinite ((+) start)
+
 let getDivisors n = 
     {1..n/2} |> Seq.filter (fun e -> n % e = 0)
 

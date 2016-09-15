@@ -2,7 +2,7 @@
 
 let problem =
     let s = seq {
-        let mutable lft = 1000000 - 1
+        let mutable lft = (1000000 - 1)
         for n in [1..10] do
             let valu = Common.factorial (10-n) |> int
             let choices = 11 - n
