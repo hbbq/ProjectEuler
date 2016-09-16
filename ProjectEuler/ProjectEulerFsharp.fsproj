@@ -74,6 +74,7 @@
     <Compile Include="Problems\000-100\001-010\Problem 010.fs" />
     <Compile Include="Problems\000-100\011-020\Problem 011.fs" />
     <Compile Include="Problems\000-100\011-020\Problem 012.fs" />
+    <Compile Include="Problems\000-100\011-020\Problem 013.fs" />
     <Compile Include="Problems\000-100\011-020\Problem 014.fs" />
     <Compile Include="Problems\000-100\011-020\Problem 016.fs" />
     <Compile Include="Problems\000-100\011-020\Problem 020.fs" />
