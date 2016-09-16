@@ -1,4 +1,0 @@
-﻿module Tests
-
-open Xunit
-

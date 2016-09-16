@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -58,36 +58,35 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Content Include="packages.config" />
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Compile Include="Common\Common.fs" />
-    <Compile Include="NeedsStructuring\p061-p070.fs" />
-    <Compile Include="NeedsStructuring\p071-p080.fs" />
-    <Compile Include="Problems\001-010\Problem 001.fs" />
-    <Compile Include="Problems\001-010\Problem 002.fs" />
-    <Compile Include="Problems\001-010\Problem 003.fs" />
-    <Compile Include="Problems\001-010\Problem 004.fs" />
-    <Compile Include="Problems\001-010\Problem 005.fs" />
-    <Compile Include="Problems\001-010\Problem 006.fs" />
-    <Compile Include="Problems\001-010\Problem 007.fs" />
-    <Compile Include="Problems\001-010\Problem 008.fs" />
-    <Compile Include="Problems\001-010\Problem 009.fs" />
-    <Compile Include="Problems\001-010\Problem 010.fs" />
-    <Compile Include="Problems\011-020\Problem 014.fs" />
-    <Compile Include="Problems\011-020\Problem 016.fs" />
-    <Compile Include="Problems\011-020\Problem 020.fs" />
-    <Compile Include="Problems\021-030\Problem 021.fs" />
-    <Compile Include="Problems\021-030\Problem 024.fs" />
-    <Compile Include="Problems\021-030\Problem 029.fs" />
-    <Compile Include="Problems\041-050\Problem 045.fs" />
-    <Compile Include="Problems\041-050\Problem 048.fs" />
-    <Compile Include="Problems\051-060\Problem 052.fs" />
-    <Compile Include="Problems\051-060\Problem 053.fs" />
-    <Compile Include="Problems\051-060\Problem 055.fs" />
-    <Compile Include="Problems\061-070\Problem 063.fs" />
-    <Compile Include="Problems\061-070\Problem 069.fs" />
-    <Compile Include="Tests\Tests.fs" />
-    <Content Include="packages.config" />
+    <Compile Include="Problems\000-100\001-010\Problem 001.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 002.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 003.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 004.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 005.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 006.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 007.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 008.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 009.fs" />
+    <Compile Include="Problems\000-100\001-010\Problem 010.fs" />
+    <Compile Include="Problems\000-100\011-020\Problem 014.fs" />
+    <Compile Include="Problems\000-100\011-020\Problem 016.fs" />
+    <Compile Include="Problems\000-100\011-020\Problem 020.fs" />
+    <Compile Include="Problems\000-100\021-030\Problem 021.fs" />
+    <Compile Include="Problems\000-100\021-030\Problem 024.fs" />
+    <Compile Include="Problems\000-100\021-030\Problem 029.fs" />
+    <Compile Include="Problems\000-100\041-050\Problem 045.fs" />
+    <Compile Include="Problems\000-100\041-050\Problem 048.fs" />
+    <Compile Include="Problems\000-100\051-060\Problem 052.fs" />
+    <Compile Include="Problems\000-100\051-060\Problem 053.fs" />
+    <Compile Include="Problems\000-100\051-060\Problem 055.fs" />
+    <Compile Include="Problems\000-100\061-070\Problem 063.fs" />
+    <Compile Include="Problems\000-100\061-070\Problem 069.fs" />
+    <Compile Include="Problems\000-100\071-080\Problem 076.fs" />
+    <Compile Include="Problems\000-100\071-080\Problem 077.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
