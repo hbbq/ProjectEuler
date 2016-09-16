@@ -3,7 +3,6 @@
 open Xunit
 
 let problem =
-    //let seq = Seq.initInfinite (fun e -> if e = 0 then 2 else e * 2 + 1) |> Seq.takeWhile (fun e -> e <= 500000) |> Seq.filter isPrime |> Seq.toList
     let seq = Common.primeSequence |> Seq.takeWhile (fun e -> e <= 500000L) |> Seq.map int |> Seq.toList
     let findFactors n = seq |> List.filter (fun e -> n % e = 0)
     let facts = [2..1000000] |> List.map (fun e -> e, findFactors e) |> Map.ofList
