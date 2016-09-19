@@ -11,13 +11,13 @@ let problem =
         for x in [12..limit] do
             if arr.[x] = 0 then
                 let d = divisorDiff x
-                if d > 0 then
+                if d > 0 then //Abundant number, all multiples of it are also abundant
                     for y in [x..x..limit] do 
                         arr.[y] <- 1
-                elif d = 0 then                    
+                elif d = 0 then //Perfect number, all multiples of it are abundant
                     for y in [x*2..x..limit] do 
                         arr.[y] <- 1
-                else
+                else //Deficent number
                     arr.[x] <- 0
         let s = seq {
             for x in [12..limit] do
