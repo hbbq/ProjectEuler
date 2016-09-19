@@ -1,6 +1,5 @@
 ﻿module Problem_022
 
-
 open Xunit
 
 let problem =
