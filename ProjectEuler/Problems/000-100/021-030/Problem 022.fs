@@ -23,6 +23,6 @@ let problem =
             yield getValues(names.[x]) * (int64(x) + 1L)
     }
     namesSeq |> Seq.sum
-   
+       
 [<Fact>]
 let Test() = Assert.Equal(problem, 871198282L)

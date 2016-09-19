@@ -62,6 +62,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Compile Include="Common\Common.fs" />
+    <EmbeddedResource Include="Data\022\p022_names.txt" />
     <Compile Include="Problems\000-100\001-010\Problem 001.fs" />
     <Compile Include="Problems\000-100\001-010\Problem 002.fs" />
     <Compile Include="Problems\000-100\001-010\Problem 003.fs" />
