@@ -1,7 +1,5 @@
 ﻿module Problem_004
 
-open Xunit
-
 let problem =
     let x n = [100..999] |> List.map (fun e -> e * n)
     [100..999] 
@@ -13,5 +11,3 @@ let problem =
     |> fun e -> fst e.Value
     |> int64
       
-[<Fact>]
-let Test() = Assert.Equal(problem, 906609L)
