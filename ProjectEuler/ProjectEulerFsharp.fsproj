@@ -105,6 +105,7 @@
     <Compile Include="Problems\000-100\061-070\Problem 069.fs" />
     <Compile Include="Problems\000-100\071-080\Problem 076.fs" />
     <Compile Include="Problems\000-100\071-080\Problem 077.fs" />
+    <Compile Include="Tests\ProblemsTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
