@@ -10,7 +10,9 @@ module String =
     let Reverse (s:string) = new string(Array.rev (s.ToCharArray()))
 
 module List =
-    let exclude excludes source = source |> List.where (fun e -> not (List.contains e excludes))
+    let exclude excludes source =
+        source 
+        |> List.where (fun e -> not (List.contains e excludes))
 
 let fibonacciSeries =
     let rec fib this previous = seq {
@@ -38,7 +40,9 @@ let infinite start =
     Seq.initInfinite ((+) start)
 
 let getDivisors n = 
-    {1..n/2} |> Seq.filter (fun e -> n % e = 0)
+    {1..n/2}
+    |> Seq.filter (fun e -> n % e = 0)
 
 let factorial n =
-    [1..n] |> List.fold (fun a e -> a * (bigint e)) 1I
+    [1..n] 
+    |> List.fold (fun a e -> a * (bigint e)) 1I
