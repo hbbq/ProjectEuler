@@ -18,3 +18,7 @@ let Problem_003() =
 [<Fact>]
 let Problem_004() = 
     Problem_004.problem.ShouldBe(906609L)
+ 
+[<Fact>]
+let Problem_005() = 
+    Problem_005.problem.ShouldBe(232792560L)
