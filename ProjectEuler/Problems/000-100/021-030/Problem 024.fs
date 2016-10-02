@@ -4,12 +4,12 @@ open Xunit
 
 let problem =
     let s = seq {
-        let mutable lft = (1000000 - 1)
+        let lft = ref (1000000 - 1)
         for n in [1..10] do
             let valu = Common.factorial (10-n) |> int
             let choices = 11 - n
-            let n = floor (float(lft) / (float valu)) |> int
-            lft <- lft - (n * valu)
+            let n = floor (float(lft.Value) / (float valu)) |> int
+            lft := lft.Value - (n * valu)
             yield n
     }
     let mutable picked = ref []
