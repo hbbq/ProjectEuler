@@ -33,5 +33,3 @@ let problem =
     |> List.sortDescending
     |> List.head
      
-[<Fact>]
-let Test() = Assert.Equal(problem, 23514624000L)

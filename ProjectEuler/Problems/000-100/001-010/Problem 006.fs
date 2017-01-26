@@ -9,5 +9,3 @@ let problem =
     let diff x = squareOfSum x - sumOfSquares x
     diff [1..100]
     
-[<Fact>]
-let Test() = Assert.Equal(problem, 25164150)
