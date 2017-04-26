@@ -7,7 +7,7 @@ module Int64 =
     let sqrt = float >> sqrt >> int64
     
 module String =    
-    let Reverse (s:string) = new string(Array.rev (s.ToCharArray()))
+    let Reverse (s:string) = s.ToCharArray() |> Array.rev |> Array.map string |> String.concat ""
 
 module List =
     let exclude excludes source =
@@ -26,18 +26,22 @@ let isPrime number =
     elif number = 2L then true
     elif number % 2L = 0L then false
     else
-        {3L..2L..Int64.sqrt number} |> Seq.tryFind (fun e -> number % e = 0L) |> fun e -> e.IsNone
+        {3L..2L..Int64.sqrt number} |> Seq.tryFind (fun e -> number % e = 0L) |> (=) None
                 
-let primeSequence =
-    let rec s n = seq {
-        if n = 1L then yield 2L else yield n
-        yield! s (n+2L)
-    }
-    s 1L
-    |> Seq.where isPrime
-
 let infinite start =
     Seq.initInfinite ((+) start)
+    
+let rec infiniteSeq start increment = 
+    seq {
+        yield start
+        yield! infiniteSeq (start + increment) increment
+    }
+
+let primeSequence = 
+    seq {
+        yield 2L
+        yield! ((infiniteSeq 3L 2L) |> Seq.filter isPrime)
+    }
 
 let getDivisors n = 
     {1..n/2}
