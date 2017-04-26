@@ -7,7 +7,7 @@ module Int64 =
     let sqrt = float >> sqrt >> int64
     
 module String =    
-    let Reverse (s:string) = s.ToCharArray() |> Array.rev |> Array.map string |> String.concat ""
+    let reverse (s:string) = s.ToCharArray() |> Array.rev |> Array.map string |> String.concat ""
 
 module List =
     let exclude excludes source =

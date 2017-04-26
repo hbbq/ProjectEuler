@@ -6,7 +6,7 @@ let problem =
     |> List.collect (fun e -> x e) 
     |> List.sortDescending
     |> List.map (fun e -> e.ToString()) 
-    |> List.map (fun e -> (e, e |> Common.String.Reverse))
+    |> List.map (fun e -> (e, e |> Common.String.reverse))
     |> List.tryFind (fun (a,b) -> a = b)
     |> fun e -> fst e.Value
     |> int64
